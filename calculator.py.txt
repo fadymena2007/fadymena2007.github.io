@@ -1,0 +1,19 @@
+def add(x, y): return x + y
+def subtract(x, y): return x - y
+def multiply(x, y): return x * y
+def divide(x, y): return "خطأ: لا يمكن القسمة على صفر!" if y == 0 else x / y
+
+while True:
+    print("\nاختر العملية:\n1. جمع\n2. طرح\n3. ضرب\n4. قسمة\n5. خروج")
+    choice = input("أدخل رقم العملية (1/2/3/4/5): ")
+    if choice == '5': print("شكراً لاستخدامك الآلة الحاسبة. إلى اللقاء!"); break
+    if choice in ('1', '2', '3', '4'):
+        try:
+            num1 = float(input("أدخل الرقم الأول: "))
+            num2 = float(input("أدخل الرقم الثاني: "))
+        except ValueError: print("خطأ: يرجى إدخال أرقام صحيحة."); continue
+        if choice == '1': print(f"{num1} + {num2} = {add(num1, num2)}")
+        elif choice == '2': print(f"{num1} - {num2} = {subtract(num1, num2)}")
+        elif choice == '3': print(f"{num1} * {num2} = {multiply(num1, num2)}")
+        elif choice == '4': result = divide(num1, num2); print(f"{num1} / {num2} = {result}")
+    else: print("مدخل غير صالح. يرجى اختيار رقم من 1 إلى 5.")

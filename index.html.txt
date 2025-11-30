@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فادى مينا - صفحتي الشخصية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #0056b3; --secondary-color: #343a40; --background-color: #f8f9fa; --text-color: #212529; --light-text-color: #6c757d; --font-family: 'Cairo', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-family); background-color: var(--background-color); color: var(--text-color); line-height: 1.6; }
+        .container { max-width: 1100px; margin: auto; padding: 0 20px; overflow: hidden; }
+        h1, h2, h3 { font-weight: 700; margin-bottom: 20px; }
+        h2 { font-size: 2.5rem; text-align: center; margin: 40px 0; }
+        section { padding: 40px 0; }
+        #main-header { background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2070') no-repeat center center/cover; height: 100vh; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        #main-header h1 { font-size: 4rem; font-weight: 900; line-height: 1.2; }
+        #main-header .tagline { font-size: 1.5rem; color: #ccc; }
+        #about .about-content { display: flex; align-items: center; gap: 30px; }
+        #about .profile-img { flex: 1; text-align: center; }
+        #about .profile-img img { width: 250px; height: 250px; border-radius: 50%; border: 5px solid var(--primary-color); object-fit: cover; }
+        #about .about-text { flex: 2; }
+        #skills .skills-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        #skills .skill-item { background: #fff; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        #skills .skill-item:hover { transform: translateY(-10px); }
+        #skills .skill-item i { font-size: 3rem; color: var(--primary-color); margin-bottom: 15px; }
+        #projects .projects-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        #projects .project-item { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        #projects .project-item:hover { transform: scale(1.05); }
+        #projects .project-item img { width: 100%; height: 200px; object-fit: cover; }
+        #projects .project-item .project-info { padding: 20px; }
+        #projects .project-info .project-link { display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease; }
+        #projects .project-info .project-link:hover { background-color: #004494; }
+        #contact { background: var(--secondary-color); color: #fff; text-align: center; }
+        #contact h2 { color: #fff; }
+        #contact .contact-content { display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; }
+        #contact .social-links a { color: #fff; font-size: 2.5rem; margin: 0 15px; transition: color 0.3s ease; }
+        #contact .social-links a:hover { color: var(--primary-color); }
+        #main-footer { text-align: center; padding: 20px; background: var(--text-color); color: #fff; }
+        @media(max-width: 768px) { h1 { font-size: 2.5rem; } h2 { font-size: 2rem; } #main-header { height: 80vh; } #about .about-content { flex-direction: column; } #contact .contact-content { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header id="main-header"><div class="container"><h1>أهلاً! أنا <span style="color: var(--primary-color);">فادى مينا</span></h1><p class="tagline">طالب أمن سيبراني | جامعة الزقازيق</p></div></header>
+    <main>
+        <section id="about"><div class="container"><h2>من أنا</h2><div class="about-content"><div class="profile-img"><img src="https://i.imgur.com/6yZyS9h.jpeg" alt="صورة شخصية لفادى مينا"></div><div class="about-text"><h3>مرحباً، أنا فادى مينا</h3><p>طالب في كلية الحاسبات والمعلومات، قسم الأمن السيبراني بجامعة الزقازيق. من محافظة الشرقية، وأبلغ من العمر 18 عاماً. شغوف بعالم البرمجة والأمن السيبراني، وأسعى دائماً لتطوير مهاراتي ومواكبة أحدث التقنيات. في وقت فراغي، أستمتع بممارسة كرة القدم.</p></div></div></div></section>
+        <section id="skills"><div class="container"><h2>مهاراتي</h2><div class="skills-content"><div class="skill-item"><i class="fa-solid fa-code"></i><h3>لغة C++</h3><p>برمجة الأنظمة وهياكل البيانات</p></div><div class="skill-item"><i class="fa-brands fa-python"></i><h3>لغة Python</h3><p>برمجة تطبيقات الويب وتحليل البيانات</p></div><div class="skill-item"><i class="fa-solid fa-shield-halved"></i><h3>أساسيات الأمن السيبراني</h3><p>حماية الشبكات وكشف الثغرات</p></div><div class="skill-item"><i class="fa-solid fa-file-word"></i><h3>مايكروسوفت أوفيس</h3><p>إجادة تامة في برنامجي Word و PowerPoint</p></div></div></div></section>
+        <section id="projects"><div class="container"><h2>أعمالي</h2><div class="projects-content"><div class="project-item"><img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=2070" alt="مشروع آلة حاسبة"><div class="project-info"><h3>آلة حاسبة (Calculator)</h3><p>مشروع بسيط وعملي باستخدام لغة Python يقوم بالعمليات الحسابية الأساسية (الجمع، الطرح، الضرب، القسمة).</p><a href="calculator.py" target="_blank" class="project-link">عرض الكود</a></div></div><div class="project-item"><img src="https://images.unsplash.com/photo-1580191930642-75b2b6533b82?q=80&w=2070" alt="مشروع لعبة الذاكرة"><div class="project-info"><h3>لعبة الذاكرة (Memory Game)</h3><p>لعبة بسيطة وممتعة طورتها باستخدام C++. الهدف هو مطابقة أزواج من الحروف المخفية في شبكة.</p><a href="memory_game.cpp" target="_blank" class="project-link">عرض الكود</a></div></div></div></div></section>
+        <section id="contact"><div class="container"><h2>تواصل معي</h2><div class="contact-content"><div><h3>عبر البريد الإلكتروني</h3><p>fadymena356@gmail.com</p></div><div class="social-links"><a href="https://www.facebook.com/fady.mena.359/" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://github.com/fadymena2007" target="_blank" title="حسابي على جيت هاب"><i class="fab fa-github"></i></a><a href="#" target="_blank" title="حسابي على لينكدإن"><i class="fab fa-linkedin"></i></a></div></div></div></section>
+    </main>
+    <footer id="main-footer"><p>جميع الحقوق محفوظة &copy; 2024 | فادى مينا</p></footer>
+</body>
+</html>
